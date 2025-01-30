@@ -4,23 +4,32 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
+    "dev": "expo start -c",
+    "dev:ios": "expo start --ios",
+    "prebuild:ios": "expo prebuild --platform ios",
+    "prebuild:ios:clean": "expo prebuild --platform ios --clean",
+    "build:ios": "expo run:ios --device",
+    "build:ios:release": "expo run:ios --configuration Release --device",
+    "ios": "expo run:ios",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "android": "expo run:android"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@/server": "workspace:*",
+    "@/shared": "workspace:*",
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "expo": "~52.0.28",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.5",
+    "expo-dev-client": "^5.0.10",
     "expo-font": "~13.0.3",
     "expo-haptics": "~14.0.1",
     "expo-linking": "~7.0.5",

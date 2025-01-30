@@ -1,15 +1,16 @@
 {
   "expo": {
-    "name": "app",
-    "slug": "app",
+    "name": "shipquick",
+    "slug": "shipquick",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "shipquick",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "io.discolabs.shipquick"
     },
     "android": {
       "adaptiveIcon": {
