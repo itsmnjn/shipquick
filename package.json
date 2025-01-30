@@ -1,0 +1,7 @@
+{
+  "name": "shipquick",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
